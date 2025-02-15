@@ -1,0 +1,57 @@
+/*
+0 - 600px:        Phone
+600 - 900px:      Tablet Portrait
+900 - 1200px:     Tablet Landscape
+[1200 - 1800px]:  Desktop - Where Normal Styles Apply
+1800px + :        Big Desktop
+*/
+/*
+$breakpoint argument choices: 
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px;
+
+
+ORDER [When refactoring for responsiveness]: Base + typography > general layout + grid > page layout > components
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+.heading-primary {
+  font-size: 5.6rem;
+}
+
+h2,
+.heading-secondary {
+  font-size: 3.5rem;
+}
+
+h3,
+.heading-tertiary {
+  font-size: 2.4rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Default browser font size is 16px. This gives you 10px baseline, making it easier to calculate rems*/
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */

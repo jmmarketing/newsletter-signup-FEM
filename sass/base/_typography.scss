@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   font-size: $default-font-size; //16px;
+  font-family: "Roboto", sans-serif;
 }
 
+h1,
 .heading-primary {
-  font-size: 7rem; //70px
+  font-size: 5.6rem; //70px
 }
 
+h2,
 .heading-secondary {
   font-size: 3.5rem; //35px
 }
 
+h3,
 .heading-tertiary {
   font-size: 2.4rem; //24px
 }
