@@ -19,23 +19,25 @@
   <body>
     <main>
       <section class="newsletter">
-        <form action="" class="newsletter__form">
+        <div action="" class="newsletter__content">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul>
+          <ul class="newsletter__list">
             <li>Product discovery and building what matters</li>
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <label for="email">Email address</label>
-          <input
-            type="email"
-            name="email"
-            id="newsletter-input"
-            placeholder="email@company/com"
-          />
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
+          <form class="newsletter__form">
+            <label for="newsletter-input">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="newsletter-input"
+              placeholder="email@company.com"
+            />
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
         <div class="newsletter__image">
           <img
             src="./assets/images/illustration-sign-up-desktop.svg"

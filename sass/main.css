@@ -85,4 +85,20 @@ body {
   height: 641px;
   display: inline-flex;
   gap: 64px;
+}
+.newsletter__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter__list {
+  list-style-position: inside;
+  list-style-image: url(../assets/images/icon-list.svg);
+}
+.newsletter__list li:not(:last-child) {
+  margin-bottom: 8px;
 }/*# sourceMappingURL=main.css.map */
