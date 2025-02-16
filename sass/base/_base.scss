@@ -14,4 +14,10 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  display: flex;
+  background-color: $color-blue-700;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
 }

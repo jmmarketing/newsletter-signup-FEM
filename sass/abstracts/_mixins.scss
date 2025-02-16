@@ -20,6 +20,13 @@ $breakpoint argument choices:
 ORDER [When refactoring for responsiveness]: Base + typography > general layout + grid > page layout > components
 */
 
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Table 768px
+- Desktop: 1440px
+*/
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 36.5em) {
