@@ -101,6 +101,26 @@ body {
   font-weight: 700;
   margin-bottom: 8px;
 }
+.newsletter__form input {
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 58%);
+  font-size: 1.6rem;
+}
+.newsletter__form button {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 8px;
+  height: 56px;
+  border: none;
+}
+.newsletter__form button:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
 .newsletter__list {
   list-style-position: inside;
 }
@@ -118,4 +138,7 @@ body {
 }
 .newsletter__list li:not(:last-child) {
   margin-bottom: 8px;
+}
+.newsletter__image {
+  transform: translateY(-8px);
 }/*# sourceMappingURL=main.css.map */

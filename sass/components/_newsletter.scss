@@ -25,9 +25,26 @@
     }
 
     & input {
+      padding: $spacing-200-16px $spacing-300-24px;
+      margin-bottom: $spacing-300-24px;
+      border-radius: 8px;
+      border: 1px solid $color-grey;
+      font-size: $default-font-size;
     }
 
     & button {
+      color: $color-white;
+      font-size: $default-font-size;
+      font-weight: 700;
+      background-color: $color-blue-800;
+      border-radius: 8px;
+      height: 56px;
+      border: none;
+
+      &:hover {
+        background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+      }
     }
   }
 
@@ -55,5 +72,6 @@
   }
 
   &__image {
+    transform: translateY(-8px);
   }
 }
