@@ -89,15 +89,31 @@ body {
 .newsletter__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 32px;
 }
 .newsletter__form {
   display: flex;
   flex-direction: column;
 }
+.newsletter__form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .newsletter__list {
   list-style-position: inside;
-  list-style-image: url(../assets/images/icon-list.svg);
+}
+.newsletter__list li {
+  display: flex;
+  gap: 16px;
+}
+.newsletter__list li::before {
+  content: "";
+  background-image: url(../assets/images/icon-list.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 21px;
 }
 .newsletter__list li:not(:last-child) {
   margin-bottom: 8px;
