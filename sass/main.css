@@ -99,6 +99,7 @@ body {
 .newsletter__form label {
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 .newsletter__list {
   list-style-position: inside;
