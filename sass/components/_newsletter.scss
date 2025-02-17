@@ -17,6 +17,15 @@
   &__form {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &--error {
+      position: absolute;
+      right: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $color-red;
+    }
 
     & label {
       font-size: 1.2rem;
@@ -30,6 +39,11 @@
       border-radius: 8px;
       border: 1px solid $color-grey;
       font-size: $default-font-size;
+
+      &:focus {
+        border: 1px solid $color-blue-800;
+        outline: none;
+      }
     }
 
     & button {

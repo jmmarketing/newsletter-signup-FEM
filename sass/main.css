@@ -95,6 +95,14 @@ body {
 .newsletter__form {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.newsletter__form--error {
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(4, 100%, 67%);
 }
 .newsletter__form label {
   font-size: 1.2rem;
@@ -107,6 +115,10 @@ body {
   border-radius: 8px;
   border: 1px solid hsl(0, 0%, 58%);
   font-size: 1.6rem;
+}
+.newsletter__form input:focus {
+  border: 1px solid hsl(234, 29%, 20%);
+  outline: none;
 }
 .newsletter__form button {
   color: hsl(0, 0%, 100%);
