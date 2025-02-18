@@ -29,10 +29,12 @@
           </ul>
           <form class="newsletter__form">
             <label for="newsletter-input">Email address</label>
-            <p class="newsletter__form--error">Valid email required</p>
+            <p class="newsletter__form--error-message">Valid email required</p>
             <input
-              type="input"
+              type="text"
               name="email"
+              minlength="6"
+              maxlength="30"
               id="newsletter-input"
               placeholder="email@company.com"
             />

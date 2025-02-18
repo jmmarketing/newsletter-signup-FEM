@@ -46,12 +46,13 @@
     flex-direction: column;
     position: relative;
 
-    &--error {
+    &--error-message {
       position: absolute;
       right: 0;
       font-size: 1.2rem;
       font-weight: 700;
       color: $color-red;
+      opacity: 0;
     }
 
     & label {

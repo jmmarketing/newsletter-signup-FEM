@@ -85,7 +85,7 @@ body {
 }
 
 .error {
-  color: hsl(4, 100%, 67%);
+  opacity: 1;
 }
 
 .newsletter {
@@ -140,12 +140,13 @@ body {
   flex-direction: column;
   position: relative;
 }
-.newsletter__form--error {
+.newsletter__form--error-message {
   position: absolute;
   right: 0;
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(4, 100%, 67%);
+  opacity: 0;
 }
 .newsletter__form label {
   font-size: 1.2rem;
