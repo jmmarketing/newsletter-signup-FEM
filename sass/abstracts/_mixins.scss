@@ -23,21 +23,21 @@ ORDER [When refactoring for responsiveness]: Base + typography > general layout 
 /*The designs were created to the following widths:
 
 - Mobile: 375px
-- Table 768px
+- Table 800px
 - Desktop: 1440px
 */
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 36.5em) {
-      //580px
+    @media only screen and (max-width: 32.8em) {
+      //525px
       @content;
     }
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (max-width: 65.5em) {
-      //1048px
+    @media only screen and (max-width: 50em) {
+      //800px
       @content;
     }
   }

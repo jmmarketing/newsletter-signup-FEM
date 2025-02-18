@@ -20,7 +20,7 @@ ORDER [When refactoring for responsiveness]: Base + typography > general layout 
 /*The designs were created to the following widths:
 
 - Mobile: 375px
-- Table 768px
+- Table 800px
 - Desktop: 1440px
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -37,6 +37,12 @@ h1,
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 100%;
+}
+@media only screen and (max-width: 32.8em) {
+  h1,
+  .heading-primary {
+    font-size: 4rem;
+  }
 }
 
 h2,
@@ -69,7 +75,13 @@ body {
   background-color: hsl(235, 18%, 26%);
   justify-content: center;
   align-items: center;
+  padding: 0 80px;
   height: 100vh;
+}
+@media only screen and (max-width: 32.8em) {
+  body {
+    padding: 0;
+  }
 }
 
 .error {
@@ -81,16 +93,47 @@ body {
   padding: 32px;
   border-radius: 36px;
   box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
-  width: 904px;
+  max-width: 904px;
   height: 641px;
   display: inline-flex;
-  gap: 64px;
+  gap: clamp(40px, 5vw, 64px);
+  width: 90vw;
+  transition: width 0.3s ease;
+}
+@media only screen and (max-width: 50em) {
+  .newsletter {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 40px;
+    max-width: 608px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 32.8em) {
+  .newsletter {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    padding: 24px;
+    display: block;
+  }
 }
 .newsletter__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
+}
+@media only screen and (max-width: 50em) {
+  .newsletter__content {
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 32.8em) {
+  .newsletter__content {
+    padding-top: 300px;
+  }
 }
 .newsletter__form {
   display: flex;
@@ -128,10 +171,16 @@ body {
   border-radius: 8px;
   height: 56px;
   border: none;
+  padding: 0 8px;
 }
 .newsletter__form button:hover {
   background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+@media only screen and (max-width: 32.8em) {
+  .newsletter__form {
+    padding-bottom: 24px;
+  }
 }
 .newsletter__list {
   list-style-position: inside;
@@ -141,10 +190,7 @@ body {
   gap: 16px;
 }
 .newsletter__list li::before {
-  content: "";
-  background-image: url(../assets/images/icon-list.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: url(../assets/images/icon-list.svg);
   height: 21px;
   width: 21px;
 }
@@ -152,5 +198,31 @@ body {
   margin-bottom: 8px;
 }
 .newsletter__image {
+  border-radius: 16px;
   transform: translateY(-8px);
+  width: 400px;
+}
+@media only screen and (max-width: 50em) {
+  .newsletter__image {
+    transform: none;
+    max-width: 528px;
+    width: 100%;
+    height: 358px;
+    background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .newsletter__image--asset {
+    display: none;
+  }
+}
+@media only screen and (max-width: 32.8em) {
+  .newsletter__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 284px;
+    border-radius: 0 0 16px 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

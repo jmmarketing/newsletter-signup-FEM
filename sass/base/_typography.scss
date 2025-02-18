@@ -13,6 +13,10 @@ h1,
   font-size: 5.6rem; //70px
   font-weight: 700;
   line-height: 100%;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 h2,
