@@ -1,3 +1,20 @@
+// ############################
+// ## Input State Variables ###
+// ############################
+:root {
+  --error-opacity: 0;
+  --input-border: 1px solid hsl(0, 0%, 58%);
+  --input-background: hsl(0, 0%, 100%);
+  --input-text-color: hsl(234, 29%, 20%);
+}
+
+[data-error="true"] {
+  --error-opacity: 1;
+  --input-border: 1px solid hsl(4, 100%, 67%);
+  --input-background: #ffe7e6;
+  --input-text-color: hsl(4, 100%, 67%);
+}
+
 // ######################
 // ## Font Variables ####
 // ######################

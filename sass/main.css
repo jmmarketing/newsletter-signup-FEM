@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --error-opacity: 0;
+  --input-border: 1px solid hsl(0, 0%, 58%);
+  --input-background: hsl(0, 0%, 100%);
+  --input-text-color: hsl(234, 29%, 20%);
+}
+
+[data-error=true] {
+  --error-opacity: 1;
+  --input-border: 1px solid hsl(4, 100%, 67%);
+  --input-background: #ffe7e6;
+  --input-text-color: hsl(4, 100%, 67%);
+}
+
 /*
 0 - 600px:        Phone
 600 - 900px:      Tablet Portrait
@@ -23,8 +38,8 @@ ORDER [When refactoring for responsiveness]: Base + typography > general layout 
 - Table 800px
 - Desktop: 1440px
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-body {
+body,
+input {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -84,8 +99,19 @@ body {
   }
 }
 
-.error {
-  opacity: 1;
+button {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 8px;
+  height: 56px;
+  border: none;
+  padding: 0 8px;
+}
+button:hover {
+  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
 }
 
 .newsletter {
@@ -146,7 +172,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(4, 100%, 67%);
-  opacity: 0;
+  opacity: var(--error-opacity);
 }
 .newsletter__form label {
   font-size: 1.2rem;
@@ -157,29 +183,17 @@ body {
   padding: 16px 24px;
   margin-bottom: 24px;
   border-radius: 8px;
-  border: 1px solid hsl(0, 0%, 58%);
+  border: var(--input-border);
   font-size: 1.6rem;
+  color: var(--input-text-color);
+  background-color: var(--input-background);
 }
 .newsletter__form input:focus {
   border: 1px solid hsl(234, 29%, 20%);
   outline: none;
 }
-.newsletter__form button {
-  color: hsl(0, 0%, 100%);
-  font-size: 1.6rem;
-  font-weight: 700;
-  background-color: hsl(234, 29%, 20%);
-  border-radius: 8px;
-  height: 56px;
-  border: none;
-  padding: 0 8px;
-}
-.newsletter__form button:hover {
-  background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
-  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
-}
 @media only screen and (max-width: 32.8em) {
-  .newsletter__form {
+  .newsletter {
     padding-bottom: 24px;
   }
 }

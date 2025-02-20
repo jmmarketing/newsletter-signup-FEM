@@ -52,7 +52,7 @@
       font-size: 1.2rem;
       font-weight: 700;
       color: $color-red;
-      opacity: 0;
+      opacity: var(--error-opacity);
     }
 
     & label {
@@ -65,34 +65,20 @@
       padding: $spacing-200-16px $spacing-300-24px;
       margin-bottom: $spacing-300-24px;
       border-radius: 8px;
-      border: 1px solid $color-grey;
+      border: var(--input-border);
       font-size: $default-font-size;
+      color: var(--input-text-color);
+      background-color: var(--input-background);
 
       &:focus {
         border: 1px solid $color-blue-800;
         outline: none;
       }
     }
+  }
 
-    & button {
-      color: $color-white;
-      font-size: $default-font-size;
-      font-weight: 700;
-      background-color: $color-blue-800;
-      border-radius: 8px;
-      height: 56px;
-      border: none;
-      padding: 0 8px;
-
-      &:hover {
-        background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
-        box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
-      }
-    }
-
-    @include respond(phone) {
-      padding-bottom: 24px;
-    }
+  @include respond(phone) {
+    padding-bottom: 24px;
   }
 
   &__list {
