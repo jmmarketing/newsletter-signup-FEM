@@ -112,6 +112,7 @@ button {
   height: 56px;
   border: none;
   padding: 0 8px;
+  flex-shrink: 0;
 }
 button:hover {
   background: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
