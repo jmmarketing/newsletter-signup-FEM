@@ -19,7 +19,7 @@
   <body>
     <main>
       <section class="newsletter">
-        <div action="" class="newsletter__content">
+        <div class="newsletter__content">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="newsletter__list">
@@ -38,7 +38,9 @@
               id="newsletter-input"
               placeholder="email@company.com"
             />
-            <button type="submit">Subscribe to monthly newsletter</button>
+            <button type="submit" id="email-submit">
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </div>
         <div class="newsletter__image">
@@ -49,7 +51,16 @@
           />
         </div>
       </section>
-      <section class="success" hidden></section>
+      <section class="success" hidden>
+        <img src="./assets/images/icon-success.svg" alt="Success Icon" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <button id="dismiss-button">Dismiss message</button>
+      </section>
     </main>
   </body>
 </html>

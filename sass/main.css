@@ -121,7 +121,7 @@ button:hover {
   box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
   max-width: 904px;
   height: 641px;
-  display: inline-flex;
+  display: none;
   gap: clamp(40px, 5vw, 64px);
   width: 90vw;
   transition: width 0.3s ease;
@@ -173,6 +173,7 @@ button:hover {
   font-weight: 700;
   color: hsl(4, 100%, 67%);
   opacity: var(--error-opacity);
+  transition: opacity 0.5s ease;
 }
 .newsletter__form label {
   font-size: 1.2rem;
@@ -187,9 +188,10 @@ button:hover {
   font-size: 1.6rem;
   color: var(--input-text-color);
   background-color: var(--input-background);
+  transition: all 0.5s ease;
 }
 .newsletter__form input:focus {
-  border: 1px solid hsl(234, 29%, 20%);
+  border: var(--input-border);
   outline: none;
 }
 @media only screen and (max-width: 32.8em) {
@@ -239,5 +241,37 @@ button:hover {
     width: 100vw;
     height: 284px;
     border-radius: 0 0 16px 16px;
+  }
+}
+
+.success {
+  background-color: hsl(0, 0%, 100%);
+  padding: 64px;
+  border-radius: 36px;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  max-width: 504px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 90vw;
+  transition: width 0.3s ease;
+}
+.success img {
+  height: 64px;
+  width: 64px;
+}
+.success span {
+  font-weight: 700;
+}
+@media only screen and (max-width: 32.8em) {
+  .success {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+    padding: 149px 24px 70px;
+  }
+  .success #dismiss-button {
+    margin-top: auto;
   }
 }/*# sourceMappingURL=main.css.map */

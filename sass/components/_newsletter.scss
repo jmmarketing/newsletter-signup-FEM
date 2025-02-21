@@ -5,7 +5,8 @@
   box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
   max-width: 904px;
   height: 641px; //Should not need once inner elements are built.
-  display: inline-flex;
+  //   display: inline-flex;
+  display: none; // Used while building success.
   gap: clamp(40px, 5vw, $spaccing-800-64px);
   width: 90vw;
   transition: width 0.3s ease;
@@ -53,6 +54,7 @@
       font-weight: 700;
       color: $color-red;
       opacity: var(--error-opacity);
+      transition: opacity 0.5s ease;
     }
 
     & label {
@@ -69,9 +71,10 @@
       font-size: $default-font-size;
       color: var(--input-text-color);
       background-color: var(--input-background);
+      transition: all 0.5s ease;
 
       &:focus {
-        border: 1px solid $color-blue-800;
+        border: var(--input-border);
         outline: none;
       }
     }
