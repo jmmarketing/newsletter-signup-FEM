@@ -47,26 +47,22 @@ input {
   color: hsl(234, 29%, 20%);
 }
 
-h1,
-.heading-primary {
+h1 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 100%;
 }
 @media only screen and (max-width: 32.8em) {
-  h1,
-  .heading-primary {
+  h1 {
     font-size: 4rem;
   }
 }
 
-h2,
-.heading-secondary {
+h2 {
   font-size: 3.5rem;
 }
 
-h3,
-.heading-tertiary {
+h3 {
   font-size: 2.4rem;
 }
 

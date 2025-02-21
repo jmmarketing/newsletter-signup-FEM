@@ -9,8 +9,7 @@ input {
   color: $color-blue-800;
 }
 
-h1,
-.heading-primary {
+h1 {
   font-size: 5.6rem; //70px
   font-weight: 700;
   line-height: 100%;
@@ -20,12 +19,10 @@ h1,
   }
 }
 
-h2,
-.heading-secondary {
+h2 {
   font-size: 3.5rem; //35px
 }
 
-h3,
-.heading-tertiary {
+h3 {
   font-size: 2.4rem; //24px
 }
