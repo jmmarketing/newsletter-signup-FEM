@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/jmmarketing/newsletter-signup-FEM)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Check it out 👀](https://jmmarketing.github.io/newsletter-signup-FEM/)
 
 ## My process
 
