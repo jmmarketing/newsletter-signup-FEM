@@ -1,8 +1,8 @@
-const dismissButton = document.querySelector("#dismiss-button");
-const newsletterForm = document.querySelector(".newsletter__form");
+import newsletterView from "./views/newsletter.js";
 
-newsletterForm.addEventListener("submit", function (e) {
-  console.log("FIRES");
-  e.preventDefault();
-  newsletterForm.dataset.error = true;
-});
+import "core-js";
+import "regenerator-runtime/runtime";
+
+function init() {}
+
+init();

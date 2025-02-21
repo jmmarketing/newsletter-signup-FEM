@@ -99,6 +99,10 @@ body {
   }
 }
 
+.hide {
+  display: none !important;
+}
+
 button {
   color: hsl(0, 0%, 100%);
   font-size: 1.6rem;
@@ -121,7 +125,7 @@ button:hover {
   box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
   max-width: 904px;
   height: 641px;
-  display: none;
+  display: inline-flex;
   gap: clamp(40px, 5vw, 64px);
   width: 90vw;
   transition: width 0.3s ease;
